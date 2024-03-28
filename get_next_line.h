@@ -6,7 +6,7 @@
 /*   By: pracksaw <pracksaw@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 17:16:31 by pracksaw          #+#    #+#             */
-/*   Updated: 2024/03/26 20:32:12 by pracksaw         ###   ########.fr       */
+/*   Updated: 2024/03/26 21:53:12 by pracksaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@
 #  define BUFFER_SIZE 1000
 # endif
 
-size_t	ft_len(char *str);
+size_t	ft_slen(char *str);
 char	*ft_strchr(char *str, int c);
 char	*ft_strjoin(char *str1, char *str2);
-char	*ft_line_allocation(int fd, char *str);
-char	*ft_next_line(char *str);
-char	*ft_rem_line(char *line);
+char	*ft_read_until_newline(int fd, char *str);
+char	*ft_extract_line(char *str);
+char	*ft_free_rem(char *line);
 char	*get_next_line(int fd);
 #endif
